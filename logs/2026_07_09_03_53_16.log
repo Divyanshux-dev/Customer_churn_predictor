@@ -1,0 +1,19 @@
+[ 2026-07-09 03:53:16,960 ] INFO src.logger - Entered the data ingestion method or component
+[ 2026-07-09 03:53:16,960 ] INFO src.logger - Reading cleaned dataset from data/processed/telco_churn_cleaned.csv
+[ 2026-07-09 03:53:16,967 ] INFO src.logger - Dataset loaded successfully with shape: (7032, 20)
+[ 2026-07-09 03:53:16,983 ] INFO src.logger - Raw dataset copy saved at artifacts/raw.csv
+[ 2026-07-09 03:53:16,983 ] INFO src.logger - Performing train-test split
+[ 2026-07-09 03:53:16,993 ] INFO src.logger - Train shape: (5625, 20)
+[ 2026-07-09 03:53:16,993 ] INFO src.logger - Test shape: (1407, 20)
+[ 2026-07-09 03:53:17,009 ] INFO src.logger - Train file saved at artifacts/train.csv
+[ 2026-07-09 03:53:17,009 ] INFO src.logger - Test file saved at artifacts/test.csv
+[ 2026-07-09 03:53:17,009 ] INFO src.logger - Data ingestion completed successfully
+[ 2026-07-09 03:53:17,009 ] INFO src.logger - Reading train and test data for transformation
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Train dataframe shape: (5625, 20)
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Test dataframe shape: (1407, 20)
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Creating preprocessing pipelines for numerical and categorical features
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Numerical columns: ['tenure', 'MonthlyCharges', 'TotalCharges']
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Categorical columns: ['SeniorCitizen', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Preprocessing object created successfully
+[ 2026-07-09 03:53:17,015 ] INFO src.logger - Splitting input features and target column
+[ 2026-07-09 03:53:17,015 ] ERROR src.logger - Exception occurred during data transformation
